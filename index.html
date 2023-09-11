@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icon Version 5 -->
+    <script src="https://kit.fontawesome.com/ca36695825.js" crossorigin="anonymous"></script>
     <!-- Google Fonts Lato -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,11 +37,65 @@
     </style>
 </head>
 
-<body>
-    <header>
-        <nav></nav>
+<body class="font-lato">
+    <header class="max-w-[1440px] mb-36 mx-auto">
+        <!-- Navbar -->
+        <nav>
+            <div class="navbar justify-between lg:justify-items-start lg:bg-primary py-1 px-5 lg:py-[30px] lg:px-[50px] lg:text-white lg:mt-12 lg:rounded-full">
+                <div class="navbar-start hidden lg:block">
+                    <ul class="menu menu-horizontal">
+                        <li><a href="#home"
+                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">Home</a>
+                        </li>
+                        <li><a href="#about-us"
+                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">About
+                                Us</a></li>
+                        <li><a href="#shop"
+                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">Shop</a>
+                        </li>
+                        <li><a href="#all-fruits"
+                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">All
+                                Fruits</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-center">
+                    <a class="flex items-center">
+                        <img src="./images/logo.png" class="w-8 lg:w-auto" alt="Logo">
+                        <span class="ml-4 text-xl lg:text-[40px] font-bold">Fruit Burst</span>
+                    </a>
+                </div>
+                <div class="navbar-end">
+                    <div class="dropdown dropdown-end block lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <button class="block lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    class="inline-block w-5 h-5 stroke-current">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
+                                </svg>
+                            </button>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] shadow text-white bg-primary rounded-lg w-40">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                        </ul>
+                    </div>
+                    <div class="form-control relative hidden lg:block">
+                        <input type="text" placeholder="Search here"
+                            class="input input-bordered lg:w-[250px] xl:w-[400px] rounded-full h-14" />
+                        <i class="fas fa-search absolute top-3 right-3 text-2xl text-dark1"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <!-- Banner -->
+
+    </main>
     <footer></footer>
 </body>
 
