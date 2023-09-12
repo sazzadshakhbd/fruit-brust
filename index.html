@@ -1,102 +1,302 @@
-<!doctype html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font Awesome Icon Version 5 -->
-    <script src="https://kit.fontawesome.com/ca36695825.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ca36695825.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google Fonts Lato -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CDN Links for tailwind & DaisyUI -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Custom Variable -->
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        primary: '#F85559',
-                        dark1: '#121212',
-                        dark3: 'rgba(18, 18, 18, 0.80)',
-                        dark4: 'rgba(18, 18, 18, 0.60)',
-                        dark5: 'rgba(18, 18, 18, 0.40)'
-                    }
-                }
-            }
-        }
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F85559",
+              dark1: "#121212",
+              dark3: "rgba(18, 18, 18, 0.80)",
+              dark4: "rgba(18, 18, 18, 0.60)",
+              dark5: "rgba(18, 18, 18, 0.40)",
+            },
+          },
+        },
+      };
     </script>
     <!-- Custom CSS -->
     <style>
-        .font-lato {
-            font-family: 'Lato', sans-serif;
-        }
+      .font-lato {
+        font-family: "Lato", sans-serif;
+      }
     </style>
-</head>
+  </head>
 
-<body class="font-lato">
-    <header class="max-w-[1440px] mb-36 mx-auto">
-        <!-- Navbar -->
-        <nav>
-            <div class="navbar justify-between lg:justify-items-start lg:bg-primary py-1 px-5 lg:py-[30px] lg:px-[50px] lg:text-white lg:mt-12 lg:rounded-full">
-                <div class="navbar-start hidden lg:block">
-                    <ul class="menu menu-horizontal">
-                        <li><a href="#home"
-                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">Home</a>
-                        </li>
-                        <li><a href="#about-us"
-                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">About
-                                Us</a></li>
-                        <li><a href="#shop"
-                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">Shop</a>
-                        </li>
-                        <li><a href="#all-fruits"
-                                class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]">All
-                                Fruits</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-center">
-                    <a class="flex items-center">
-                        <img src="./images/logo.png" class="w-8 lg:w-auto" alt="Logo">
-                        <span class="ml-4 text-xl lg:text-[40px] font-bold">Fruit Burst</span>
-                    </a>
-                </div>
-                <div class="navbar-end">
-                    <div class="dropdown dropdown-end block lg:hidden">
-                        <label tabindex="0" class="btn btn-ghost btn-circle">
-                            <button class="block lg:hidden">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    class="inline-block w-5 h-5 stroke-current">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h16"></path>
-                                </svg>
-                            </button>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] shadow text-white bg-primary rounded-lg w-40">
-                            <li><a>Home</a></li>
-                            <li><a>About Us</a></li>
-                            <li><a>Shop</a></li>
-                            <li><a>All Fruits</a></li>
-                        </ul>
-                    </div>
-                    <div class="form-control relative hidden lg:block">
-                        <input type="text" placeholder="Search here"
-                            class="input input-bordered lg:w-[250px] xl:w-[400px] rounded-full h-14" />
-                        <i class="fas fa-search absolute top-3 right-3 text-2xl text-dark1"></i>
-                    </div>
-                </div>
+  <body class="font-lato">
+    <header class="max-w-[1440px] lg:mb-14 mb-2 mx-auto">
+      <!-- Navbar Section-->
+      <nav>
+        <div
+          class="navbar justify-between lg:justify-items-start lg:bg-primary py-1 px-5 lg:py-[30px] lg:px-[50px] lg:text-white lg:mt-12 lg:rounded-full"
+        >
+          <div class="navbar-start hidden lg:block w-auto">
+            <ul class="menu menu-horizontal">
+              <li>
+                <a
+                  href="#home"
+                  class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about-us"
+                  class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#shop"
+                  class="font-medium text-lg hover:bg-transparent hover:text-dark1 pl-0 lg:pr-5 xl:pr-[30px]"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#all-fruits"
+                  class="font-medium text-lg hover:bg-transparent hover:text-dark1 px-0"
+                  >All Fruits</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-center">
+            <a class="flex items-center">
+              <img src="./images/logo.png" class="w-8 lg:w-auto" alt="Logo" />
+              <span class="ml-4 text-xl lg:text-[40px] font-bold"
+                >Fruit Burst</span
+              >
+            </a>
+          </div>
+          <div class="navbar-end w-auto">
+            <div class="dropdown dropdown-end block lg:hidden">
+              <label tabindex="0" class="btn btn-ghost btn-circle">
+                <button class="block lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block w-5 h-5 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </label>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] shadow text-white bg-primary rounded-lg w-40"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
             </div>
-        </nav>
+            <div class="form-control relative hidden lg:block">
+              <input
+                type="text"
+                placeholder="Search here"
+                class="input input-bordered lg:w-[250px] xl:w-[400px] rounded-full h-14"
+              />
+              <i
+                class="fas fa-search absolute top-3 right-3 text-2xl text-dark1"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <!-- Banner -->
+      <!-- Banner Section-->
+      <section class="max-w-[1440px] mb-36 mx-auto px-5 lg:px-0">
+        <div class="carousel w-full bg-dark1 rounded-lg">
+          <div id="slide1" class="carousel-item relative w-full">
+            <div
+              class="hero h-auto lg:h-[600px]"
+              style="background-image: url('./images/banner1.png')"
+            >
+              <div class="hero-overlay bg-dark1 opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-[670px]">
+                  <h1 class="mb-6 text-3xl lg:text-[72px] leading-normal font-extrabold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 font-medium text-white text-sm lg:text-xl">We supply highly quality organic products</p>
+                  <button class="btn bg-primary text-white border-primary rounded-lg hover:bg-primary hover:border-primary">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide4"
+                class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1"
+                >❮</a
+              >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1"
+                >❯</a
+              >
+            </div>
+          </div>
+          <div id="slide2" class="carousel-item relative w-full">
+            <div
+              class="hero lg:h-[600px]"
+              style="background-image: url('./images/banner2.png')"
+            >
+              <div class="hero-overlay bg-dark1 opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-[670px]">
+                  <h1 class="mb-6 text-3xl lg:text-[72px] font-extrabold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 font-medium text-white text-sm lg:text-xl">We supply highly quality organic products</p>
+                  <button class="btn bg-primary text-white border-primary rounded-lg hover:bg-primary hover:border-primary">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide1" class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1">❮</a>
+              <a href="#slide3" class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1">❯</a>
+            </div>
+          </div>
+          <div id="slide3" class="carousel-item relative w-full">
+            <div
+              class="hero lg:h-[600px]"
+              style="background-image: url('./images/banner3.png')"
+            >
+              <div class="hero-overlay bg-dark1 opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-[670px]">
+                  <h1 class="mb-6 text-3xl lg:text-[72px] font-extrabold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 font-medium text-white text-sm lg:text-xl">We supply highly quality organic products</p>
+                  <button class="btn bg-primary text-white border-primary rounded-lg hover:bg-primary hover:border-primary">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide2" class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1">❮</a>
+              <a href="#slide4" class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1">❯</a>
+            </div>
+          </div>
+          <div id="slide4" class="carousel-item relative w-full">
+            <div
+              class="hero lg:h-[600px]"
+              style="background-image: url('./images/banner4.png')"
+            >
+              <div class="hero-overlay bg-dark1 opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-[670px]">
+                  <h1 class="mb-6 text-3xl lg:text-[72px] font-extrabold text-white">
+                    Exotic tastes at your doorstep
+                  </h1>
+                  <p class="mb-8 font-medium text-white text-sm lg:text-xl">We supply highly quality organic products</p>
+                  <button class="btn bg-primary text-white border-primary rounded-lg hover:bg-primary hover:border-primary">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a href="#slide3" class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1">❮</a>
+              <a href="#slide1" class="btn btn-circle bg-dark1 text-white border-dark1 hover:bg-dark1 hover:border-dark1">❯</a>
+            </div>
+          </div>
+        </div>
+        <!-- Fruits Names -->
+        <div class="lg:grid hidden max-w-[1196px] mx-auto py-[50px] px-[70px] grid-cols-5 gap-[98px] bg-white rounded-lg shadow-lg relative -bottom-[-150px]">
+            <div class="text-center">
+                <img src="./images/fruit1.png" class="mb-4" alt="Fruit-1">
+                <span class="block text-xl font-medium text-dark3">Strawberry</span>
+            </div>
+            <div class="text-center">
+                <img src="./images/fruit2.png" class="mb-4" alt="Fruit-1">
+                <span class="block text-xl font-medium text-dark3">Orange</span>
+            </div>
+            <div class="text-center">
+                <img src="./images/fruit3.png" class="mb-4" alt="Fruit-1">
+                <span class="block text-xl font-medium text-dark3">Mango</span>
+            </div>
+            <div class="text-center">
+                <img src="./images/fruit4.png" class="mb-4" alt="Fruit-1">
+                <span class="block text-xl font-medium text-dark3">Strawberry</span>
+            </div>
+            <div class="text-center">
+                <img src="./images/fruit5.png" class="mb-4" alt="Fruit-1">
+                <span class="block text-xl font-medium text-dark3">Mango</span>
+            </div>
+        </div>
+      </section>
 
+      <!-- Deal Section -->
+      <div class="flex flex-col lg:flex-row justify-between items-center max-w-[1440px] mb-36 mx-auto px-5 lg:px-0">
+        <div>
+            <h2 class="font-extrabold text-dark1 text-5xl leading-normal mb-6">Deal of the day</h2>
+            <p class="text-dark4 font-medium leading-[26px] text-[16px] max-w-[615px]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <div>
+            <ul class="grid grid-cols-7 gap-6 items-center">
+                <li class="text-center">
+                    <span class="block text-5xl text-dark1 leading-normal font-extrabold mb-2">29</span>
+                    <span class="block text-dark4 text-[16px] font-medium leading-[26px]">Days</span>
+                </li>
+                <li class="text-center"><i class="fas fa-ellipsis-v text-2xl text-dark1"></i></li>
+                <li class="text-center">
+                    <span class="block text-5xl text-dark1 leading-normal font-extrabold mb-2">15</span>
+                    <span class="block text-dark4 text-[16px] font-medium leading-[26px]">Hours</span>
+                </li>
+                <li class="text-center"><i class="fas fa-ellipsis-v text-2xl text-dark1"></i></li>
+                <li class="text-center">
+                    <span class="block text-5xl text-dark1 leading-normal font-extrabold mb-2">25</span>
+                    <span class="block text-dark4 text-[16px] font-medium leading-[26px]">Minutes</span>
+                </li>
+                <li class="text-center"><i class="fas fa-ellipsis-v text-2xl text-dark1"></i></li>
+                <li class="text-center">
+                    <span class="block text-5xl text-dark1 leading-normal font-extrabold mb-2">08</span>
+                    <span class="block text-dark4 text-[16px] font-medium leading-[26px]">Seconds</span>
+                </li>
+            </ul>
+        </div>
+      </div>
     </main>
     <footer></footer>
-</body>
-
+  </body>
 </html>
